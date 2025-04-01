@@ -1,0 +1,79 @@
+/* ==UserStyle==
+@name simpread style: Dark & Peace
+@namespace simpread.pro
+@version 0.1.0
+@description dark mode for eye protection
+@author eterlen
+==/UserStyle== */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500&family=Noto+Sans&family=Noto+Sans+SC:wght@100;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500&family=Noto+Serif&family=Noto+Serif+SC:wght@100;300;400;500&family=Noto+Serif+TC:wght@100;300;400;500&family=PT+Serif:wght@400;700&display=swap");
+
+/* 
+这是简悦阅读模式的 HTML 结构
+<div class="simpread-read-root simpread-theme-root"
+    <sr-read>
+        <sr-rd-title></sr-rd-title>
+        <sr-rd-desc></sr-rd-desc>
+        <>sr-rd-content></sr-rd-content>
+        <sr-rd-footer></sr-rd-footer>
+    </sr-read>
+</div> 
+*/
+
+/*
+下面代码的效果是全黑色背景，方便我写 scss 代码和调试用的。
+*/
+.simpread-theme-root {
+    background-color: #1E1E1E
+}
+
+sr-rd-content img {
+    margin: 0px;
+    padding: 0px;
+    max-width: 50%;
+    border: 0px;
+    box-shadow: none;
+    background: #2b2b2b;
+    filter: brightness(0.5);
+}
+sr-rd-content p {
+    color: rgb(99, 104, 102);
+    line-height: 1.7;
+}
+
+sr-rd-content li code,
+sr-rd-content p code {
+    margin: 0 4px;
+    font-size: initial;
+    font-family: auto;
+}
+
+sr-rd-content h3 {
+    font-size: 1.8rem;
+    line-height: 38.4px;
+    padding: 1rem 0.2rem;
+    margin: 1rem 0 0.5rem 3px
+}
+
+sr-rd-content a:visited {
+    color: #6F6F6F
+}
+sr-rd-content a:link {
+    color: #AEAEAE
+}
+sr-rd-content a:hover {
+    color: #515151
+}
+
+sr-rd-content ul {
+    margin-left: 1em;
+}
+sr-rd-content ul li {
+    margin: 0 0 0.3em
+}
+
+sr-rd-content pre,
+sr-rd-content pre *,
+sr-rd-content pre div {
+    font-size: 1.3rem;
+}
+

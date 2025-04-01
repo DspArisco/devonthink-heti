@@ -1,0 +1,1116 @@
+@charset "UTF-8";
+/*!
+ * Project: circle.css for Circle 阅读器
+ * URL: 
+ * Author: Ariescc [ariesmi@icloud.com]
+ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Heti Hei";
+  src: local("PingFang SC Regular"), local("PingFang TC Regular"), local("Hiragino Sans GB W3"), local("Heiti SC Regular"), local("Heiti TC Regular"), local("Microsoft YaHei"), local("Microsoft Jhenghei"), local("Source Han Sans CN Regular"), local("Source Han Sans HK Regular"), local("Source Han Sans TW Regular"), local("Source Han Sans JP Regular"), local("Source Han Sans KR Regular"), local("Noto Sans CJK SC Regular"), local("Noto Sans CJK TC Regular"), local("Noto Sans CJK JP Regular"), local("Noto Sans CJK KR Regular"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");
+}
+
+@font-face {
+  font-family: "Heti Hei";
+  font-weight: 200;
+  src: local("PingFang SC Light"), local("PingFang TC Light"), local("Heiti SC Light"), local("Heiti TC Light"), local("Microsoft YaHei Light"), local("Microsoft Jhenghei Light"), local("Source Han Sans CN Light"), local("Source Han Sans HK Light"), local("Source Han Sans TW Light"), local("Source Han Sans JP Light"), local("Source Han Sans KR Light"), local("Noto Sans CJK SC Light"), local("Noto Sans CJK TC Light"), local("Noto Sans CJK JP Light"), local("Noto Sans CJK KR Light");
+}
+
+@font-face {
+  font-family: "Heti Hei";
+  font-weight: 600;
+  src: local("PingFang SC Medium"), local("Hiragino Sans GB W6"), local("PingFang TC Medium"), local("Heiti SC Medium"), local("Heiti TC Medium"), local("Microsoft YaHei Bold"), local("Microsoft Jhenghei Bold"), local("Source Han Sans CN Bold"), local("Source Han Sans HK Bold"), local("Source Han Sans TW Bold"), local("Source Han Sans JP Bold"), local("Source Han Sans KR Bold"), local("Noto Sans CJK SC Bold"), local("Noto Sans CJK TC Bold"), local("Noto Sans CJK JP Bold"), local("Noto Sans CJK KR Bold");
+}
+
+@font-face {
+  font-family: "Heti Hei Black";
+  font-weight: 800;
+  src: local("Lantinghei SC Heavy"), local("Lantinghei TC Heavy"), local("PingFang SC Semibold"), local("PingFang TC Semibold"), local("Hiragino Sans GB W6"), local("Heiti SC Medium"), local("Heiti TC Medium"), local("Microsoft YaHei Bold"), local("Microsoft Jhenghei Bold"), local("Source Han Sans CN Heavy"), local("Source Han Sans HK Heavy"), local("Source Han Sans TW Heavy"), local("Source Han Sans JP Heavy"), local("Source Han Sans KR Heavy"), local("Noto Sans CJK SC Heavy"), local("Noto Sans CJK TC Heavy"), local("Noto Sans CJK JP Heavy"), local("Noto Sans CJK KR Heavy"), local("Droid Sans Fallback");
+}
+
+@font-face {
+  font-family: "Heti Song";
+  src: local("Songti SC Regular"), local("Songti TC Regular"), local("SimSun");
+}
+
+@font-face {
+  font-family: "Heti Song";
+  font-weight: 200;
+  src: local("Songti SC Light"), local("Songti TC Light"), local("STSong"), local("SimSun");
+}
+
+@font-face {
+  font-family: "Heti Song";
+  font-weight: 600;
+  src: local("Songti SC Bold"), local("Songti TC Bold"), local("SimSun");
+}
+
+@font-face {
+  font-family: "Heti Song Black";
+  font-weight: 800;
+  src: local("Songti SC Black"), local("SimSun");
+}
+
+@font-face {
+  font-family: "Heti Kai";
+  src: local("Kaiti SC Regular"), local("Kaiti TC Regular"), local("BiauKai");
+}
+
+@font-face {
+  font-family: "Heti Kai";
+  font-weight: 600;
+  src: local("Kaiti SC Bold"), local("Kaiti TC Bold");
+}
+
+@font-face {
+  font-family: "Heti Kai Black";
+  font-weight: 800;
+  src: local("Kaiti SC Black"), local("Kaiti TC Black");
+}
+
+span.critic.comment {
+  margin: 0 0.25em;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #999;
+  background-color: #f3f3f3;
+}
+
+span.critic.comment::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  content: "";
+  vertical-align: text-top;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iI2NjY2NjYyI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTIxLjk5IDRjMC0xLjEtLjg5LTItMS45OS0ySDRjLTEuMSAwLTIgLjktMiAydjEyYzAgMS4xLjkgMiAyIDJoMTRsNCA0LS4wMS0xOHpNMjAgNHYxMy4xN0wxOC44MyAxNkg0VjRoMTZ6TTYgMTJoMTJ2Mkg2em0wLTNoMTJ2Mkg2em0wLTNoMTJ2Mkg2eiIvPjwvc3ZnPg==");
+  background-size: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  span.critic.comment {
+    color: #666;
+    background-color: #333;
+  }
+  span.critic.comment::before {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzY2NiI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTIxLjk5IDRjMC0xLjEtLjg5LTItMS45OS0ySDRjLTEuMSAwLTIgLjktMiAydjEyYzAgMS4xLjkgMiAyIDJoMTRsNCA0LS4wMS0xOHpNMjAgNHYxMy4xN0wxOC44MyAxNkg0VjRoMTZ6TTYgMTJoMTJ2Mkg2em0wLTNoMTJ2Mkg2em0wLTNoMTJ2Mkg2eiIvPjwvc3ZnPg==");
+  }
+}
+
+html {
+  background-color: #eee !important;
+}
+
+div.container.paper {
+  box-sizing: border-box !important;
+  width: 75% !important;
+  min-width: 780px !important;
+  max-width: 960px !important;
+  margin-block-start: 48px !important;
+  margin-block-end: 72px !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-block-start: 48px !important;
+  padding-block-end: 48px !important;
+  padding-inline-start: 48px !important;
+  padding-inline-end: 48px !important;
+  border-radius: 2px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.32) !important;
+  background-color: #fff !important;
+  background-size: 100% 24px !important;
+}
+
+div.container.paper heti-spacing {
+  display: inline;
+}
+
+div.container.paper heti-spacing + sup,
+div.container.paper heti-spacing + sub {
+  margin-inline-start: 0;
+}
+
+div.container.paper .heti-spacing-start {
+  margin-inline-end: 0.25em;
+}
+
+div.container.paper .heti-spacing-end {
+  margin-inline-start: 0.25em;
+}
+
+div.container.paper heti-adjacent {
+  display: inline;
+}
+
+div.container.paper .heti-adjacent-half {
+  margin-inline-end: -0.5em;
+}
+
+div.container.paper .heti-adjacent-quarter {
+  margin-inline-end: -0.25em;
+}
+
+div.container.paper .page {
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+div.container.paper > * {
+  display: block !important;
+  max-width: 60rem !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  background-color: white !important;
+}
+
+a {
+  color: #4285f4 !important;
+  text-decoration: none !important;
+}
+
+div.container.paper,
+.page {
+  max-width: 42em !important;
+  font-family: "Times New Roman", times, "Heti Song", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  line-height: 1.5 !important;
+}
+
+div.container.paper figure,
+.page figure {
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+}
+
+div.container.paper iframe,
+.page iframe {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+div.container.paper video,
+.page video {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+div.container.paper img,
+.page img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+div.container.paper::before, div.container.paper::after,
+.page::before,
+.page::after {
+  content: "";
+  display: table;
+}
+
+div.container.paper::after,
+.page::after {
+  clear: both;
+}
+
+div.container.paper > *:first-child,
+div.container.paper section > *:first-child,
+div.container.paper td > *:first-child,
+.page > *:first-child,
+.page section > *:first-child,
+.page td > *:first-child {
+  margin-block-start: 0 !important;
+}
+
+div.container.paper > *:last-child,
+div.container.paper section > *:last-child,
+div.container.paper td > *:last-child,
+.page > *:last-child,
+.page section > *:last-child,
+.page td > *:last-child {
+  margin-block-end: 0 !important;
+}
+
+div.container.paper blockquote,
+.page blockquote {
+  margin-block-start: 12px;
+  margin-block-end: 24px;
+  margin-inline-start: 32px;
+  margin-inline-end: 32px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  background-color: rgba(0, 0, 0, 0.054);
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper blockquote,
+  .page blockquote {
+    background-color: rgba(255, 255, 255, 0.054);
+  }
+}
+
+div.container.paper figure,
+.page figure {
+  display: block;
+  text-align: center;
+}
+
+div.container.paper figure > img,
+.page figure > img {
+  display: block;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+div.container.paper hr,
+.page hr {
+  width: 30%;
+  height: 1px;
+  margin-block-start: 48px;
+  margin-block-end: 47px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border: 0;
+  background-color: #cccccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper hr,
+  .page hr {
+    background-color: #404040;
+  }
+}
+
+div.container.paper p,
+.page p {
+  margin-block-start: 12px;
+  margin-block-end: 24px;
+  text-align: justify;
+}
+
+div.container.paper p:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)), div.container.paper p:not(:lang(zh)),
+.page p:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page p:not(:lang(zh)) {
+  text-align: start;
+}
+
+div.container.paper pre,
+.page pre {
+  margin-block-start: 12px;
+  margin-block-end: 12px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  overflow: auto;
+  font-family: "SFMono-Regular", consolas, "Liberation Mono", menlo, courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  white-space: pre;
+  word-wrap: normal;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.054);
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper pre,
+  .page pre {
+    background-color: rgba(255, 255, 255, 0.054);
+  }
+}
+
+div.container.paper pre code,
+.page pre code {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+div.container.paper h1,
+div.container.paper h2,
+div.container.paper h3,
+div.container.paper h4,
+div.container.paper h5,
+div.container.paper h6,
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.page h5,
+.page h6 {
+  position: relative;
+  margin: 0;
+  margin-block-start: 24px;
+  margin-block-end: 12px;
+  font-weight: 600;
+}
+
+div.container.paper h1,
+.page h1 {
+  margin-block-end: 24px;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+div.container.paper h2,
+.page h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+div.container.paper h3,
+.page h3 {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+div.container.paper h4,
+.page h4 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+div.container.paper h5,
+.page h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div.container.paper h6,
+.page h6 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+div.container.paper h1,
+div.container.paper h2,
+div.container.paper h3,
+.page h1,
+.page h2,
+.page h3 {
+  letter-spacing: 0.05em;
+}
+
+div.container.paper h1:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)), div.container.paper h1:not(:lang(zh)),
+div.container.paper h2:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+div.container.paper h2:not(:lang(zh)),
+div.container.paper h3:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+div.container.paper h3:not(:lang(zh)),
+.page h1:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page h1:not(:lang(zh)),
+.page h2:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page h2:not(:lang(zh)),
+.page h3:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page h3:not(:lang(zh)) {
+  letter-spacing: 0;
+}
+
+div.container.paper h1 + h2,
+div.container.paper h2 + h3,
+div.container.paper h3 + h4,
+div.container.paper h4 + h5,
+div.container.paper h5 + h6,
+.page h1 + h2,
+.page h2 + h3,
+.page h3 + h4,
+.page h4 + h5,
+.page h5 + h6 {
+  margin-block-start: 12px;
+}
+
+div.container.paper ul,
+div.container.paper ol,
+div.container.paper dl,
+.page ul,
+.page ol,
+.page dl {
+  margin-block-start: 12px;
+  margin-block-end: 24px;
+}
+
+div.container.paper ul,
+div.container.paper ol,
+.page ul,
+.page ol {
+  padding-inline-start: 32px;
+}
+
+div.container.paper ul ul,
+div.container.paper ul ol,
+div.container.paper ol ul,
+div.container.paper ol ol,
+.page ul ul,
+.page ul ol,
+.page ol ul,
+.page ol ol {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+div.container.paper ul,
+.page ul {
+  list-style-type: disc;
+}
+
+div.container.paper ol,
+.page ol {
+  list-style-type: decimal;
+}
+
+div.container.paper ul ul,
+div.container.paper ol ul,
+.page ul ul,
+.page ol ul {
+  list-style-type: circle;
+}
+
+div.container.paper ul ul ul,
+div.container.paper ul ol ul,
+div.container.paper ol ul ul,
+div.container.paper ol ol ul,
+.page ul ul ul,
+.page ul ol ul,
+.page ol ul ul,
+.page ol ol ul {
+  list-style-type: square;
+}
+
+div.container.paper li,
+.page li {
+  list-style-type: unset;
+}
+
+div.container.paper table,
+.page table {
+  box-sizing: border-box;
+  table-layout: fixed;
+  margin-block-start: 12px;
+  margin-block-end: 24px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  word-break: break-word;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper table,
+  .page table {
+    border-color: #404040;
+  }
+}
+
+div.container.paper th,
+div.container.paper td,
+.page th,
+.page td {
+  padding-block-start: 6px;
+  padding-block-end: 6px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper th,
+  div.container.paper td,
+  .page th,
+  .page td {
+    border-color: #404040;
+  }
+}
+
+div.container.paper caption,
+.page caption {
+  caption-side: bottom;
+  margin-block-start: 2px;
+  margin-block-end: -4px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+div.container.paper a,
+.page a {
+  text-decoration: none;
+}
+
+div.container.paper a:hover,
+.page a:hover {
+  padding-block-end: 1px;
+  border-block-end: 1px solid currentColor;
+  text-decoration: none;
+}
+
+div.container.paper abbr[title],
+.page abbr[title] {
+  padding-block-end: 1px;
+  border-block-end: 1px dotted;
+  text-decoration: none;
+  cursor: help;
+}
+
+div.container.paper b,
+div.container.paper strong,
+.page b,
+.page strong {
+  font-weight: 600;
+}
+
+div.container.paper code,
+.page code {
+  margin-inline-start: 0.25em;
+  margin-inline-end: 0.25em;
+  font-family: "SFMono-Regular", consolas, "Liberation Mono", menlo, courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.875em;
+}
+
+div.container.paper dfn,
+.page dfn {
+  font-weight: 600;
+}
+
+div.container.paper dfn:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)), div.container.paper dfn:not(:lang(zh)),
+.page dfn:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page dfn:not(:lang(zh)) {
+  font-weight: 400;
+}
+
+div.container.paper em,
+.page em {
+  font-weight: 600;
+}
+
+div.container.paper figcaption,
+.page figcaption {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  text-align: start;
+}
+
+div.container.paper i,
+.page i {
+  font-style: italic;
+}
+
+div.container.paper ins,
+div.container.paper u,
+.page ins,
+.page u {
+  padding-block-end: 1px;
+  border-block-end: 1px solid;
+  text-decoration: none;
+}
+
+div.container.paper mark,
+.page mark {
+  padding-block-start: 2px;
+  padding-block-end: 2px;
+  padding-inline-start: 1px;
+  padding-inline-end: 1px;
+  margin-inline-start: 1px;
+  margin-inline-end: 1px;
+  background-color: rgba(255, 247, 0, 0.88);
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper mark,
+  .page mark {
+    background-color: rgba(77, 74, 0, 0.88);
+  }
+}
+
+div.container.paper q,
+.page q {
+  quotes: "「" "」" "『" "』";
+}
+
+div.container.paper q:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)), div.container.paper q:not(:lang(zh)),
+.page q:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page q:not(:lang(zh)) {
+  quotes: initial;
+  quotes: auto;
+}
+
+div.container.paper rt,
+.page rt {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+div.container.paper small,
+.page small {
+  font-size: 0.875em;
+}
+
+div.container.paper strong,
+.page strong {
+  font-weight: 600;
+}
+
+div.container.paper sub,
+div.container.paper sup,
+.page sub,
+.page sup {
+  position: relative;
+  margin-inline-start: 0.25em;
+  margin-inline-end: 0.25em;
+  font-size: 0.75em;
+  font-family: "Helvetica Neue", helvetica, arial, "Heti Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+div.container.paper sub,
+.page sub {
+  bottom: -0.25em;
+}
+
+div.container.paper sup,
+.page sup {
+  top: -0.5em;
+}
+
+div.container.paper sup:target,
+div.container.paper sup a:target,
+.page sup:target,
+.page sup a:target {
+  background-color: #dbedff;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper sup:target,
+  div.container.paper sup a:target,
+  .page sup:target,
+  .page sup a:target {
+    background-color: #3a6188;
+  }
+}
+
+div.container.paper summary,
+.page summary {
+  padding-inline-start: 1em;
+  outline: 0;
+  cursor: pointer;
+}
+
+div.container.paper summary::-webkit-details-marker,
+.page summary::-webkit-details-marker {
+  width: 0.6em;
+  margin-inline-end: 0.4em;
+}
+
+div.container.paper u[title],
+.page u[title] {
+  cursor: help;
+  border-block-end-width: 3px;
+  border-block-end-style: double;
+  border-block-end-color: rgba(0, 0, 0, 0.54);
+}
+
+@media (prefers-color-scheme: dark) {
+  div.container.paper u[title],
+  .page u[title] {
+    border-block-end-color: rgba(255, 255, 255, 0.54);
+  }
+}
+
+div.container.paper address,
+div.container.paper cite,
+div.container.paper dfn,
+div.container.paper dt,
+div.container.paper em,
+.page address,
+.page cite,
+.page dfn,
+.page dt,
+.page em {
+  font-style: normal;
+}
+
+div.container.paper address:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)), div.container.paper address:not(:lang(zh)),
+div.container.paper cite:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+div.container.paper cite:not(:lang(zh)),
+div.container.paper dfn:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+div.container.paper dfn:not(:lang(zh)),
+div.container.paper dt:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+div.container.paper dt:not(:lang(zh)),
+div.container.paper em:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+div.container.paper em:not(:lang(zh)),
+.page address:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page address:not(:lang(zh)),
+.page cite:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page cite:not(:lang(zh)),
+.page dfn:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page dfn:not(:lang(zh)),
+.page dt:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page dt:not(:lang(zh)),
+.page em:not(:lang(zh)):not(:lang(ja)):not(:lang(kr)),
+.page em:not(:lang(zh)) {
+  font-style: italic;
+}
+
+div.container.paper abbr[title],
+div.container.paper del,
+div.container.paper ins,
+div.container.paper s,
+div.container.paper u,
+.page abbr[title],
+.page del,
+.page ins,
+.page s,
+.page u {
+  margin-inline-start: 1px;
+  margin-inline-end: 1px;
+}

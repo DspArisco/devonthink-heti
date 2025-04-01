@@ -1,0 +1,137 @@
+/*!
+ * Project: circle.css for Circle 阅读器
+ * URL: 
+ * Author: Ariescc [ariesmi@icloud.com]
+ */
+ @import "~normalize.css";
+ @import "~heti/lib/font";
+ @import "~heti/lib/variables";
+ @import "~heti/lib/base";
+ @import "~heti/lib/heading";
+ @import "~heti/lib/list";
+ @import "~heti/lib/table";
+ @import "~heti/lib/inline";
+ @import "~heti/lib/helpers/add-on";
+ @import "_criticmarkup";
+ 
+ html {
+   background-color: #eee !important;
+ }
+ 
+div.container.paper {
+  box-sizing: border-box !important;
+  width: 75% !important;
+  min-width: 780px !important;
+  max-width: 960px !important;
+  margin-block-start: 48px !important;
+  margin-block-end: 72px !important;
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  padding-block-start: 48px !important;
+  padding-block-end: 48px !important;
+  padding-inline-start: 48px !important;
+  padding-inline-end: 48px !important;
+  border-radius: 2px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.32) !important;
+  background-color: #fff !important;
+  background-size: 100% 24px !important;
+
+  // 增加混排样式
+  @include hetiAddOns();
+}
+ 
+div.container.paper .page {
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+div.container.paper > * {
+   display: block !important;
+   max-width: 60rem !important;
+   margin-inline-start: auto !important;
+   margin-inline-end: auto !important;
+   background-color: white !important;
+ }
+
+
+ a {
+   color: #4285f4 !important;
+   text-decoration: none !important;
+ }
+
+
+$root-selector: 'div.container.paper';
+$sr-selector: '.page';
+// $sr-prefix: 'div.container .page.zh';
+
+#{$root-selector},
+#{$sr-selector} {
+  max-width: $line-length !important;
+  font-family: $font-family-song !important;
+  font-size: $font-size-normal !important;
+  font-weight: $font-weight-normal !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  line-height: $line-height-normal !important;
+
+  // 去除边距
+  figure {
+    margin-inline-start: 0 !important;
+    margin-inline-end: 0 !important;
+  }
+
+  iframe {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  @include hetiBase();
+  @include hetiHeading();
+  @include hetiList();
+  @include hetiTable();
+  @include hetiInline();
+}
+
+// #{$sr-prefix} {
+//   &-title {
+//     margin-block-end: $std-block-unit * 1;
+//     border-block-end: 1px solid #ddd;
+//     font-family: $font-family-hei;
+
+//     br {
+//       display: none;
+//     }
+//   }
+
+//   &-link {
+//     position: relative;
+//     display: block;
+//     margin-block-end: $std-block-unit / 2;
+//     font-size: $font-size-h1;
+//     font-weight: $font-weight-bold;
+//     line-height: 1.25;
+//     letter-spacing: 0.05em;
+//     color: inherit;
+//     border-block-end: 0 !important;
+//     padding-block-end: 0 !important;
+//   }
+
+//   &-date {
+//     display: block;
+//     margin-block-start: $std-block-unit / 2;
+//     margin-block-end: $std-block-unit / 2;
+//     font-size: $font-size-small;
+//   }
+// }
+

@@ -1,5 +1,13 @@
 # Heti for DEVONthink
 
+## 开发环境
+- node 12
+
+## 其他说明
+- simpread：简悦
+- devonthink
+- circle: circel 阅读器
+
 A style sheet based on [heti](https://github.com/sivan/heti) for DEVONthink 3 Markdown preview and RSS reader, support dark mode.
 
 ![Preview](https://raw.githubusercontent.com/sivan/devonthink-heti/master/demo/screenshot.png)
